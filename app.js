@@ -6,7 +6,7 @@ var session = require('express-session');
 
 var app = express();
 
-var port = process.env.PORT || 5000;
+var port = process.env.PORT || 3000;
 
 var nav = [{
     Link: '/books',
