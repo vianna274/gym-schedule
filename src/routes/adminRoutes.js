@@ -33,7 +33,7 @@ var books = [
 function router (nav) {
     adminRouter.route('/addBooks')
       .get(function(req, res) {
-        var url = 'mongodb://localhost:27017/libraryApp';
+        var url = 'mongodb://mongo_libraryapp:27017/libraryApp';
         mongodb.connect(url, function (err, db) {
             if (err) {
                 console.log(err);

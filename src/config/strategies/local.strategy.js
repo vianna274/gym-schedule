@@ -12,7 +12,7 @@ module.exports = function () {
             username: username,
             password: password
         };
-        var url = 'mongodb://localhost:27017/libraryApp';
+        var url = 'mongodb://mongo_libraryapp:27017/libraryApp';
         mongodb.connect(url, function (err, db) {
             var collection = db.collection('users');
             collection.findOne({

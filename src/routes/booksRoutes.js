@@ -14,7 +14,7 @@ function router (nav) {
     });
     booksRouter.route('/')
         .get(function (req, res) {
-            var url = 'mongodb://localhost:27017/libraryApp';
+            var url = 'mongodb://mongo_libraryapp:27017/libraryApp';
             mongodb.connect(url, function (err, db) {
                 var collection = db.collection('books');
 
@@ -32,7 +32,7 @@ function router (nav) {
     booksRouter.route('/:id')
         .get(function (req, res) {
             var id = new ObjectId(req.params.id);
-            var url = 'mongodb://localhost:27017/libraryApp';
+            var url = 'mongodb://mongo_libraryapp:27017/libraryApp';
             mongodb.connect(url, function (err, db) {
                 var collection = db.collection('books');
 
