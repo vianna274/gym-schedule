@@ -17,8 +17,9 @@ var nav = [{
     }];
 
 var booksRouter = require('./src/routes/booksRoutes.js') (nav);
-var adminRouter = require('./src/routes/adminRoutes.js') (nav);
+//var adminRouter = require('./src/routes/adminRoutes.js') (nav);
 var authRouter = require('./src/routes/authRoutes.js') (nav);
+var manageDaysRouter = require('./src/routes/manageDaysRoutes.js') ();
 
 app.use(express.static('public'));
 app.use(bodyParser.json());
@@ -34,14 +35,12 @@ app.set('view engine', 'ejs');
 app.set('views', './src/views');
 
 app.use('/books', booksRouter);
-app.use('/admin', adminRouter);
+//app.use('/admin', adminRouter);
 app.use('/auth', authRouter);
+app.use('/admin', manageDaysRouter);
 
 app.get('/', function (req, res) {
-    res.render('index', {
-        title: 'Main',
-        nav: nav
-    });
+    res.render('index', {});
 });
 
 app.listen(port, function (err) {
