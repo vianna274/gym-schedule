@@ -147,13 +147,13 @@ button, select {
   border-radius: 0px;
 }
 #header .navbar {
-  background: rgba(17, 17, 17, 1);
+  background: rgb(88, 0, 0);
   border-radius: 0px;
   border-bottom: 0px;
 }
 
 .is-sticky #header .navbar{
-  background: rgba(0, 0, 0, 0.73);
+  background: rgba(108, 0, 0, 0.78);
 }
 
 #header .nav-item a{
@@ -195,4 +195,22 @@ button, select {
   color: rgba(255,255,255,1);
   background-color:rgb(177, 0, 0);
   border: 2px solid rgba(145, 13, 0, 0.91);
+}
+
+.fa {
+  color:rgb(255, 0, 0);
+  font-size: 30px;
+}
+
+@media (max-width: 767px) {
+  .is-sticky #header {
+      margin-left: 0;
+      margin-right: 0;
+      background: rgba(0, 0, 0, 0.30);
+  }
+}
+
+.fa-facebook {
+  color:rgb(37, 37, 37);
+  font-size: 20px;
 }
