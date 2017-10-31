@@ -1,0 +1,152 @@
+body {
+    background: #fff;
+    color: #666666;
+    font-family: "Open Sans", sans-serif;
+}
+
+.pic img {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.member {
+  text-align: center;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.section-title {
+    font-size: 32px;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+}
+
+.section-title-divider {
+    width: 50px;
+    height: 3px;
+    background: #03C4EB;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#team .member span {
+    font-style: italic;
+    display: block;
+    font-size: 13px;
+}
+
+#about .about-container {
+  background: url(../img/about-img.jpg) left top no-repeat;
+}
+
+
+#about {
+  background: #fff;
+  padding-bottom: 20px;
+}
+
+#schedule {
+  background: #fff;
+  padding: 30px 0;
+  padding-top: 120px;
+}
+
+#team {
+  background: #fff;
+  padding: 20px 0;
+}
+
+.about-container {
+  background: url(../img/about-img.jpg) left top no-repeat;
+}
+
+.about-content {
+  background: #fff;
+}
+
+.about-title {
+  color: #333;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.about-text {
+  line-height: 26px;
+
+}
+
+.about-text:last-child {
+    margin-bottom: 0;
+}
+
+button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+    font: 13.3333px Arial;
+}
+
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+    align-items: flex-start;
+    text-align: center;
+    color: buttontext;
+    background-color: buttonface;
+    box-sizing: border-box;
+    padding: 2px 6px 3px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-image: initial;
+}
+
+button, select {
+    text-transform: none;
+}
+
+#contact {
+  padding-top: 50px;
+}
+
+#contact .form button[type="submit"] {
+    background: #03C4EB;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+}
+
+#header {
+  border: 0px solid;
+  border-radius: 0px;
+}
+#header .navbar {
+  background: rgba(17, 17, 17, 1);
+  border-radius: 0px;
+  border-bottom: 0px;
+}
+
+.is-sticky #header .navbar{
+  background: rgba(0, 0, 0, 0.73);
+}
+
+#header .nav-item a{
+  color: rgba(255, 255, 255, 1);
+}
