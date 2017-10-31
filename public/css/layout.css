@@ -130,7 +130,7 @@ h4 {
 
 ::selection {
   color: #fff;
-  background: #17bed2;
+  background: rgb(177, 0, 0);
   text-shadow: none;
 }
 
@@ -282,9 +282,9 @@ fieldset[disabled] .btn-theme {
 }
 
 .btn-white-brd:hover, .btn-white-brd:focus, .btn-white-brd.focus {
-  color: #515769;
-  background: #fff;
-  border-color: #fff;
+  color: #fff;
+  background: rgba(238, 0, 0, 0.71);
+  border-color: rgb(247, 0, 0);
 }
 
 .btn-default-bg {
@@ -737,7 +737,7 @@ fieldset[disabled] .btn-theme {
   left: 0;
   width: 9px;
   height: 2px;
-  background: #17bed2;
+  background: rgb(177, 0, 0);
   opacity: 0;
   content: " ";
   transition-duration: 400ms;

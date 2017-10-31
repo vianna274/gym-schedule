@@ -1,3 +1,4 @@
+
 body {
     background: #fff;
     color: #666666;
@@ -30,7 +31,7 @@ body {
 .section-title-divider {
     width: 50px;
     height: 3px;
-    background: #03C4EB;
+    background: rgb(177, 0, 0);
     margin: 0 auto;
     margin-bottom: 20px;
 }
@@ -126,7 +127,15 @@ button, select {
 }
 
 #contact .form button[type="submit"] {
-    background: #03C4EB;
+    background: rgb(177, 0, 0);
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+}
+
+#contact .form button[type="submit"]:hover {
+    background: rgb(200, 0, 0);
     border: 0;
     padding: 10px 24px;
     color: #fff;
@@ -149,4 +158,41 @@ button, select {
 
 #header .nav-item a{
   color: rgba(255, 255, 255, 1);
+}
+
+#pretty {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/pretty-bg.jpg) fixed center center;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+#pretty h3, #pretty p, #pretty {
+  text-align: left;
+  color: rgb(255,255,255);
+}
+
+.contact-btn-container {
+  text-align: center;
+}
+.contact-btn {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.contact-btn:hover {
+  transition: 0.5s;
+  color: rgba(255,255,255,1);
+  background-color:rgb(177, 0, 0);
+  border: 2px solid rgba(145, 13, 0, 0.91);
 }
